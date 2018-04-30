@@ -1,9 +1,14 @@
 ﻿using Community.RandomOrg;
 using System.Collections.Generic;
 using System.Linq;
+using NerdLib.Data;
 
 namespace NerdLib.Random
 {
+
+    /// <summary>
+    /// Random Generation resulting in Unique Values.
+    /// </summary>
     public static class Unique
     {
         /// <summary>
@@ -36,7 +41,6 @@ namespace NerdLib.Random
         public static int GetInt(int digitCount)
         {
             int[] storage = new int[digitCount];
-            int result = 0;
             for (int i = 0; i < digitCount; i++)
             {
                 double myRandom = 1;
@@ -46,14 +50,15 @@ namespace NerdLib.Random
                     myRandom += random.NextDouble();
                 }
                 storage[i] = (int)System.Math.Floor(myRandom * System.Math.Pow(10, i));
-
-                result += storage[i];
             }
-            return result;
+            return Int.Concatenate(storage);
         }
     }
 
-    public static class Psudo
+    /// <summary>
+    /// Random Generation resulting in Pseudo Values.
+    /// </summary>
+    public static class Pseudo
     {
         /// <summary>
         /// Get an array of random ints.
@@ -84,7 +89,6 @@ namespace NerdLib.Random
         public static int GetInt(int digitCount)
         {
             int[] storage = new int[digitCount];
-            int result = 0;
             for (int i = 0; i < digitCount; i++)
             {
                 double myRandom = 1;
@@ -94,13 +98,14 @@ namespace NerdLib.Random
                     myRandom += random.NextDouble();
                 }
                 storage[i] = (int)System.Math.Floor(myRandom * System.Math.Pow(10, i));
-
-                result += storage[i];
             }
-            return result;
+            return Int.Concatenate(storage);
         }
     }
 
+    /// <summary>
+    /// Random Generation resulting in Truely Random Values.
+    /// </summary>
     public static class True
     {
         private static string key = "d627f22b-4a9d-4b3e-8883-05471e87e11f";
