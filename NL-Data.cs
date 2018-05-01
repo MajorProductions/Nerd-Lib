@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace NerdLib.Data
 {
@@ -16,6 +16,9 @@ namespace NerdLib.Data
     }
     public static class String
     {
-
+        public static void temp()
+        {
+            System.Console.CursorVisible = false;
+        }
     }
 }

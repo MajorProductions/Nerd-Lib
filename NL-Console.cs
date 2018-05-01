@@ -290,6 +290,8 @@ namespace NerdLib.Console
     {
         public static Color.Colors oldCol = new Color.Colors();
 
+        // NOTE: Currently these use the console to display their output, but I am looking to to other display methods.
+
         /// <summary>
         /// Sends a Debug message to the console application.
         /// </summary>
@@ -313,6 +315,60 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Cyan);
             System.Console.WriteLine(" Debug" + " -  " + message);
+            System.Console.ReadLine();
+            Color.Foreground(oldCol);
+        }
+
+        /// <summary>
+        /// Sends a Warning message to the console application.
+        /// </summary>
+        /// <param name="message">The message you want to appear.</param>
+        /// <param name="Code">The code you want to appear. (Used to track down in code)</param>
+        public static void LogWarning(string message, string Code)
+        {
+            oldCol = Color.CurrentForeground;
+            Color.Foreground(Color.Colors.Yellow);
+            System.Console.WriteLine(" WarningCode:" + Code + " -  " + message);
+            System.Console.ReadLine();
+            Color.Foreground(oldCol);
+        }
+
+        /// <summary>
+        /// Sends a Warning message to the console application.
+        /// </summary>
+        /// <param name="message">The message you want to appear.</param>
+        public static void LogWarning(string message)
+        {
+            oldCol = Color.CurrentForeground;
+            Color.Foreground(Color.Colors.Yellow);
+            System.Console.WriteLine(" Warning" + " -  " + message);
+            System.Console.ReadLine();
+            Color.Foreground(oldCol);
+        }
+
+        /// <summary>
+        /// Sends a Error message to the console application.
+        /// </summary>
+        /// <param name="message">The message you want to appear.</param>
+        /// <param name="Code">The code you want to appear. (Used to track down in code)</param>
+        public static void LogError(string message, string Code)
+        {
+            oldCol = Color.CurrentForeground;
+            Color.Foreground(Color.Colors.Red);
+            System.Console.WriteLine(" ErrorCode:" + Code + " -  " + message);
+            System.Console.ReadLine();
+            Color.Foreground(oldCol);
+        }
+
+        /// <summary>
+        /// Sends a Error message to the console application.
+        /// </summary>
+        /// <param name="message">The message you want to appear.</param>
+        public static void LogError(string message)
+        {
+            oldCol = Color.CurrentForeground;
+            Color.Foreground(Color.Colors.Red);
+            System.Console.WriteLine(" Error" + " -  " + message);
             System.Console.ReadLine();
             Color.Foreground(oldCol);
         }
