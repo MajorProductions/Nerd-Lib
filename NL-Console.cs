@@ -374,4 +374,121 @@ namespace NerdLib.Console
         }
 
     }
+
+    /// <summary>
+    /// Controls all output to the console application.
+    /// </summary>
+    public static class Send
+    {
+
+        /// <summary>
+        /// Displays all queued messages.
+        /// </summary>
+        public static void Display()
+        {
+            System.Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Send a message.
+        /// </summary>
+        /// <param name="message">The message you are sending.</param>
+        public static void Message(string message)
+        {
+            System.Console.WriteLine(message);
+        }
+
+        /// <summary>
+        /// Send a message and optionally display as soon as it's sent.
+        /// </summary>
+        /// <param name="message">The message you are sending.</param>
+        /// <param name="displayNow">True: Calls Display();  -  False: Does not call function.</param>
+        public static void Message(string message, bool displayNow)
+        {
+            System.Console.WriteLine(message);
+            if (displayNow) { Display(); }
+        }
+
+        /// <summary>
+        /// Send a message using a specified color.
+        /// </summary>
+        /// <param name="message">The message you are sending.</param>
+        /// <param name="messageColor">Color.Colors the message will be in.</param>
+        public static void Message(string message, Color.Colors messageColor)
+        {
+            Color.Colors oldFore = Color.CurrentForeground;
+            Color.Foreground(messageColor);
+            System.Console.WriteLine(message);
+            Color.Foreground(oldFore);
+        }
+
+        /// <summary>
+        /// Send a message using a specified color and optionally displaying as soon as it's sent.
+        /// </summary>
+        /// <param name="message">The message you are sending.</param>
+        /// <param name="messageColor">Color.Colors the message will be in.</param>
+        /// <param name="displayNow">True: Calls Display();  -  False: Does not call function.</param>
+        public static void Message(string message, Color.Colors messageColor, bool displayNow)
+        {
+            Color.Colors oldFore = Color.CurrentForeground;
+            Color.Foreground(messageColor);
+            System.Console.WriteLine(message);
+            Color.Foreground(oldFore);
+            if (displayNow) { Display(); }
+        }
+
+        /// <summary>
+        /// Send multiple messages at once.
+        /// </summary>
+        /// <param name="message">The messages you are sending.</param>
+        public static void MultiMessage(string[] message)
+        {
+            foreach (string input in message)
+            {
+                Message(input);
+            }
+        }
+
+        /// <summary>
+        /// Send multiple messages and optionally display them as soon as they are sent.
+        /// </summary>
+        /// <param name="message">The messages you are sending.</param>
+        /// <param name="displayNow">True: Calls Display();  -  False: Does not call function.</param>
+        public static void MultiMessage(string[] message, bool displayNow)
+        {
+            foreach (string input in message)
+            {
+                Message(input);
+            }
+            if (displayNow) { Display(); }
+        }
+
+        /// <summary>
+        /// Sends multiple messages all using a specified color.
+        /// </summary>
+        /// <param name="message">The messages you are sending.</param>
+        /// <param name="messageColor">Color.Colors the messages will be in.</param>
+        public static void MultiMessage(string[] message, Color.Colors messageColor)
+        {
+            foreach (string input in message)
+            {
+                Message(input, messageColor);
+            }
+        }
+
+        /// <summary>
+        /// Sends multiple messages using a specified color and optionally display them as soon as they are sent.
+        /// </summary>
+        /// <param name="message">The messages you are sending.</param>
+        /// <param name="messageColor">Color.Colors the messages will be in.</param>
+        /// <param name="displayNow">True: Calls Display();  -  False: Does not call function.</param>
+        public static void MultiMessage(string[] message, Color.Colors messageColor, bool displayNow)
+        {
+            foreach (string input in message)
+            {
+                Message(input, messageColor);
+            }
+            if (displayNow) { Display(); }
+        }
+    }
 }
