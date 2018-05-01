@@ -393,7 +393,7 @@ namespace NerdLib.Console
         /// </summary>
         public static void Display()
         {
-            System.Console.ReadLine();
+            System.Console.ReadKey();
         }
 
         /// <summary>
@@ -526,11 +526,47 @@ namespace NerdLib.Console
         }
 
         /// <summary>
+        /// Request an int from the user. Keeps requesting until a valid int is given. Text is displayed inline.
+        /// </summary>
+        /// <param name="inLineString">The text displayed before the request.</param>
+        /// <returns></returns>
+        public static int RequestInt(string inLineString)
+        {
+            int intoutput = 0;
+            bool passedTest = false;
+            while (!passedTest)
+            {
+                System.Console.Write(inLineString);
+                string result = System.Console.ReadLine();
+                if (int.TryParse(result, out intoutput))
+                {
+                    passedTest = true;
+                }
+                else
+                {
+                    Log.LogError("The given response was not a int!");
+                }
+            }
+            return intoutput;
+        }
+
+        /// <summary>
         /// Requests a string from the user.
         /// </summary>
         /// <returns></returns>
         public static string RequestString()
         {
+            return System.Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Requests a string from the user. Text is displayed inline.
+        /// </summary>
+        /// <param name="inLineString">The text displayed before the request.</param>
+        /// <returns></returns>
+        public static string RequestString(string inLineString)
+        {
+            System.Console.Write(inLineString);
             return System.Console.ReadLine();
         }
 
@@ -544,6 +580,29 @@ namespace NerdLib.Console
             bool outputBool = false;
             while (!passedTest)
             {
+                string result = System.Console.ReadLine();
+                if (result == "true") { passedTest = true; outputBool = true; }
+                else if (result == "false") { passedTest = true; outputBool = false; }
+                else
+                {
+                    Log.LogWarning("The given response was not a bool!");
+                }
+            }
+            return outputBool;
+        }
+
+        /// <summary>
+        /// Requests a bool from the user. Keeps requesting until a valid bool is given. Text is displayed inline.
+        /// </summary>
+        /// <param name="inLineString">The text displayed before the request.</param>
+        /// <returns></returns>
+        public static bool RequestBool(string inLineString)
+        {
+            bool passedTest = false;
+            bool outputBool = false;
+            while (!passedTest)
+            {
+                System.Console.Write(inLineString);
                 string result = System.Console.ReadLine();
                 if (result == "true") { passedTest = true; outputBool = true; }
                 else if (result == "false") { passedTest = true; outputBool = false; }
