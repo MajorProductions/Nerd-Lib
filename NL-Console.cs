@@ -295,7 +295,7 @@ namespace NerdLib.Console
     /// </summary>
     public static class Log
     {
-        public static Color.Colors oldCol = new Color.Colors();
+        private static Color.Colors oldCol = new Color.Colors();
 
         // NOTE: Currently these use the console to display their output, but I am looking to to other display methods.
 
@@ -496,6 +496,63 @@ namespace NerdLib.Console
                 Message(input, messageColor);
             }
             if (displayNow) { Display(); }
+        }
+    }
+
+    public static class Input
+    {
+
+        /// <summary>
+        /// Request an int from the user. Keeps requesting until a valid int is given.
+        /// </summary>
+        /// <returns></returns>
+        public static int RequestInt()
+        {
+            int intoutput = 0;
+            bool passedTest = false;
+            while (!passedTest)
+            {
+                string result = System.Console.ReadLine();
+                if (int.TryParse(result, out intoutput))
+                {
+                    passedTest = true;
+                }
+                else
+                {
+                    Log.LogError("The given response was not a int!");
+                }
+            }
+            return intoutput;
+        }
+
+        /// <summary>
+        /// Requests a string from the user.
+        /// </summary>
+        /// <returns></returns>
+        public static string RequestString()
+        {
+            return System.Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Requests a bool from the user. Keeps requesting until a valid bool is given.
+        /// </summary>
+        /// <returns></returns>
+        public static bool RequestBool()
+        {
+            bool passedTest = false;
+            bool outputBool = false;
+            while (!passedTest)
+            {
+                string result = System.Console.ReadLine();
+                if (result == "true") { passedTest = true; outputBool = true; }
+                else if (result == "false") { passedTest = true; outputBool = false; }
+                else
+                {
+                    Log.LogWarning("The given response was not a bool!");
+                }
+            }
+            return outputBool;
         }
     }
 }
