@@ -499,6 +499,9 @@ namespace NerdLib.Console
         }
     }
 
+    /// <summary>
+    /// Controls all input from the user.
+    /// </summary>
     public static class Input
     {
 
