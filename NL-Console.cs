@@ -83,7 +83,14 @@ namespace NerdLib.Console
     /// </summary>
     public static class Color
     {
+        /// <summary>
+        /// The Color.Colors the foreground is currently set to.
+        /// </summary>
         public static Colors CurrentForeground { get; private set; } = Colors.White;
+
+        /// <summary>
+        /// The Color.Colors the background is currently set to.
+        /// </summary>
         public static Colors CurrentBackground { get; private set; } = Colors.Black;
 
         /// <summary>
