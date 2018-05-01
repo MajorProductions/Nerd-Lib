@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NL-Console.cs" />
     <Compile Include="NL-Data.cs" />
     <Compile Include="NL-Random.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

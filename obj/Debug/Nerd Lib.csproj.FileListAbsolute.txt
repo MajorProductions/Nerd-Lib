@@ -1,0 +1,32 @@
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Nerd Lib.dll.config
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Nerd Lib.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Nerd Lib.pdb
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Community.RandomOrg.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Microsoft.Win32.Primitives.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Newtonsoft.Json.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.AppContext.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Buffers.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Console.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Data.JsonRpc.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Globalization.Calendars.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.IO.Compression.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.IO.Compression.ZipFile.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.IO.FileSystem.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.IO.FileSystem.Primitives.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Net.Http.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Net.Sockets.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Security.Cryptography.Algorithms.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Security.Cryptography.Encoding.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Security.Cryptography.Primitives.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Xml.ReaderWriter.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Community.RandomOrg.xml
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\Newtonsoft.Json.xml
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Buffers.xml
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Data.JsonRpc.xml
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\obj\Debug\Nerd Lib.csprojResolveAssemblyReference.cache
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\obj\Debug\Nerd Lib.dll
+c:\users\main\documents\visual studio 2017\Projects\Nerd Console\Nerd Lib\obj\Debug\Nerd Lib.pdb

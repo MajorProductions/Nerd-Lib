@@ -309,7 +309,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Cyan);
             System.Console.WriteLine(" DebugCode:" + Code + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
@@ -322,7 +322,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Cyan);
             System.Console.WriteLine(" Debug" + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
@@ -336,7 +336,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Yellow);
             System.Console.WriteLine(" WarningCode:" + Code + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
@@ -349,7 +349,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Yellow);
             System.Console.WriteLine(" Warning" + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
@@ -363,7 +363,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Red);
             System.Console.WriteLine(" ErrorCode:" + Code + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
@@ -376,7 +376,7 @@ namespace NerdLib.Console
             oldCol = Color.CurrentForeground;
             Color.Foreground(Color.Colors.Red);
             System.Console.WriteLine(" Error" + " -  " + message);
-            System.Console.ReadLine();
+            System.Console.ReadKey();
             Color.Foreground(oldCol);
         }
 
