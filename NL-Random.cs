@@ -108,8 +108,17 @@ namespace NerdLib.Random
     /// </summary>
     public static class True
     {
-        private static string key = "d627f22b-4a9d-4b3e-8883-05471e87e11f";
+        private static string key = "";
         private static RandomOrgClient myClient = new RandomOrgClient(key);
+
+        /// <summary>
+        /// You must do this before you call ANY other True function.
+        /// </summary>
+        /// <param name="key">The API Key you got from Random.Org</param>
+        private static void SetKey(string key)
+        {
+            True.key = key;
+        }
 
         /// <summary>
         /// Get an array of random ints.
