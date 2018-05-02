@@ -143,6 +143,10 @@ namespace NerdLib.Random
             return result.Result.Random.Data[0];
         }
 
+        /// <summary>
+        /// Returns the number of uses left in your Key.
+        /// </summary>
+        /// <returns></returns>
         public static string GetUse()
         {
             var result = myClient.GetUsageAsync();
