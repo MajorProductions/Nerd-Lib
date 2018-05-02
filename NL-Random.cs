@@ -51,7 +51,7 @@ namespace NerdLib.Random
                 }
                 storage[i] = (int)System.Math.Floor(myRandom * System.Math.Pow(10, i));
             }
-            return Int.Concatenate(storage);
+            return Modification.Concatenate(storage);
         }
     }
 
@@ -99,7 +99,7 @@ namespace NerdLib.Random
                 }
                 storage[i] = (int)System.Math.Floor(myRandom * System.Math.Pow(10, i));
             }
-            return Int.Concatenate(storage);
+            return Modification.Concatenate(storage);
         }
     }
 
